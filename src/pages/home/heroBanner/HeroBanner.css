@@ -1,0 +1,123 @@
+.heroBanner{
+    width: 100%;
+    height: 700px;
+    background: var(--black);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.heroBanner .backrop-img{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    overflow: hidden;
+}
+.heroBanner .backrop-img Img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.heroBanner .opacity-layer{
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(180deg,rgba(4,21,45,0)0%,#04152d 79%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.heroBanner .heroBannerContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;  
+}
+.heroBanner .heroBannerContent .title{
+    font-size: 90px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+.heroBanner .heroBannerContent .subTitle{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.heroBanner .heroBannerContent .searchInput{
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+.heroBanner .heroBannerContent .searchInput input{
+    width: calc(100% - 150px);
+    height: 60px;
+    font-size: 20px;
+    padding: 0 30px;
+    background: white;
+    outline: 0;
+    border: 0;
+    border-radius: 30px 0 0 30px;
+
+}
+.heroBanner .heroBannerContent .searchInput button{
+    width: 150px;
+    height: 60px;
+    background: linear-gradient(109.6deg, rgb(5, 84, 94) 16%, rgb(187, 187, 187) 91.1%);;
+    color: white;
+    outline: 0;
+    border: 0;
+    border-radius: 0,30px,30px,0;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .heroBanner {
+        height: 450px;
+    }
+    .heroBanner .heroBannerContent .title{
+        margin-bottom: 10px;
+        font-size: 50px;
+    }
+    .heroBanner .heroBannerContent .subTitle{
+        font-size: 18px;
+    }
+    .heroBanner .heroBannerContent .searchInput input{
+        width: calc(100%-100px);
+        height: 50px;
+        font-size: 14px;
+        padding: 0 15px;
+    }
+
+    .heroBanner .heroBannerContent .searchInput button{
+        width: 100px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (max-width: 310px) {
+    .heroBanner .heroBannerContent .searchInput input{
+        width: calc(100%-80px);
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .heroBanner .heroBannerContent .searchInput button{
+        width: 90px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+}
+

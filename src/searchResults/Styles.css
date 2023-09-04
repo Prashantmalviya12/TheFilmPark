@@ -1,0 +1,24 @@
+.searchResultsPage{
+    min-height: 700px;
+    padding-top: 100px;
+
+}
+.searchResultsPage .resultsNotfound{
+    font-size: 24px;
+    color: azure;
+}
+.searchResultsPage .pageTitle{
+    font-size: 24px;
+    line-height: 34px;
+    color: white;
+    margin-bottom: 25px;
+}
+.searchResultsPage .content{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 16px;
+    margin-bottom: 50px;
+}
+.searchResultsPage .movieCard .posterBlock{
+  margin-bottom: 20px;
+}

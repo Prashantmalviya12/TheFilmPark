@@ -1,0 +1,71 @@
+.footer{
+    background-color: var(--black3);
+    padding: 50px 0;
+    color: white;
+    position: relative;
+}
+.footer .contentWrapper{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.footer .menuItems{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.footer .menuItems .menuItem{
+    transition: all ease 0.3s;
+    cursor: pointer;
+    font-size: 16px;
+}
+.footer .menuItems .menuItem:hover{
+    color: var(--green);
+}
+
+.footer .infoText{
+    font-size: 14px;
+    line-height: 20px;
+    opacity: 0.5;
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+.footer .socialIcons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.footer .socialIcons .icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+.footer .socialIcons .icon:hover{
+   box-shadow: 0 0 0.625em #1B4D3E;
+   color: #1B4D3E;
+}
+
+@media only screen and (max-width: 768px){
+    .footer .menuItems{
+        margin-bottom:20px;
+        gap: 15px;
+    }
+    .footer .menuItems .menuItem{
+        font-size: 12px;
+    }
+    .footer .infoText{
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+}

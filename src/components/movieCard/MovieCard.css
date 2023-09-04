@@ -1,0 +1,106 @@
+.movieCard {
+    width:  calc(20% - 15px);
+    cursor: pointer;
+    flex-shrink: 0;
+    margin-bottom: 25px;
+
+}
+
+.movieCard .posterBlock {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1.5;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+.movieCard .posterBlock:hover{
+    opacity: 0.5;
+}
+
+.movieCard .posterBlock Img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.movieCard .posterBlock Img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.movieCard .circulerRating{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 30px;
+    background-color: white;
+    flex-shrink: 0;
+}
+.movieCard .genres{
+    display: flex;
+    position: relative;
+    flex-flow: wrap;
+    justify-content: flex-end;
+}
+.movieCard .textBlock{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.movieCard .textBlock .title{
+    font-size: 20px;
+    margin-bottom: 10px;
+    line-height: 24px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.movieCard .textBlock .date{
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .movieCard {
+        width: calc(50%-5px);
+    }
+
+    .movieCard .circulerRating{
+        width: 40px;
+        height: 40px;
+    }
+    .movieCard .genres{
+        display: none;
+    }
+    .movieCard .textBlock .title{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .movieCard .circulerRating{
+        width: 30px;
+        height: 30px;
+    }
+    .movieCard .textBlock .title{
+        font-size: 12px;
+    }
+    .movieCard .textBlock .date{
+        font-size: 10px;
+    }
+}
+    
